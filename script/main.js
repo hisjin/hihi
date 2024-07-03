@@ -36,21 +36,22 @@ $(function(){
         }else{
             $('.gotop').fadeOut()
         }
-
+        
         // _________________________메뉴바___________________________
-
         $('main .mainbg > section').each(function(){
             if($(this).offset().top <= $(window).scrollTop() + 200 ){
      
                 let idx = $(this).index()
-   
+    
                 $('header ul li').removeClass('ha')
                 $('header ul li').eq(idx).addClass('ha')
             }
             
         })
+    })
+
         
-    });
+ 
     $('.gotop').click(function(e){
         e.preventDefault()
         $('html,body').stop().animate({
@@ -79,4 +80,5 @@ $(function(){
     })
 
     
+
 })

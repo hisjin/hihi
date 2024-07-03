@@ -22,7 +22,7 @@
         width: 15%;
         position: fixed;
         top: -2px;
-        right: 4.5%;
+        right: 4.4%;
     }
 
     main .profile {
@@ -380,8 +380,8 @@ header .logo {
 header .logo a {
     font-size: 2rem;
 }
-header nav ul li a {
-    font-size: 0.7rem;
+header .h-inner {
+    font-size: 0.75rem;
 }
 header .h-inner.hi {
     width: 27%;
@@ -389,8 +389,16 @@ header .h-inner.hi {
 
     position: fixed;
     top: -2px;
-    right: 5.8%;
+    right: 6.5%;
 }
+/* header .h-inner.hi  {
+    width: 27%;
+    font-size: 0;
+
+    position: fixed;
+    top: -2px;
+    right: 6.5%;
+} */
 
 main .home .inner {
     font-size: 4rem;
@@ -439,7 +447,7 @@ main .profile .self .pro-inner .wrap .text .about > * {
 }
 
 main .profile .self .pro-inner .wrap .text {
-    height: 480px;
+    height: 455px;
     padding: 10px;
     align-content: space-between;
     
@@ -492,6 +500,8 @@ main .profile .self .pro-inner .wrap .text .license p {
 main .profile .self .pro-inner .btn {
     width: 100px;
     height: 40px;
+    border: 2px solid #F6826D;
+    border-radius: 10px;
 
     position: absolute;
     bottom: 325px;
@@ -499,33 +509,245 @@ main .profile .self .pro-inner .btn {
 }
 main .profile .self .pro-inner .btn a {
     width: 100%;
+    height: 100%;
     line-height: 33px;
     font-size: 0.8rem;
+    border-radius: 8px;
 }
 main .profile .self .pro-inner .btn a:active {
     font-size: 0.7rem;
 }
-/* ---------------------- */
+/* -------popup---------- */
 main .profile .popup {
     width: 95%;
     height: 80vh;
 
     position: absolute;
-    top: 80px; left: 20px;
+    top: 80px; left: 10px;
 
-    padding: 30px;
+    padding: 15px;
+}
+.popup .inner h2 {
+    font-size: 1.5rem;
+}
+.popup .inner .skill {
+    width: 100%;
+    height: 45%;
+}
+.popup .inner .skill .skillbox .container {
+    margin-top: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: repeat(2,85px);
+    grid-gap: 7px;
+}
+.popup .inner .skill .skillbox .container .item .svelte1 {
+    padding: 5px;
+    font-size: 1rem;
+}
+svg {
+    width: 25px;
+    height: 25px;
+}
+.popup .inner .skill .skillbox .container .item .text-caps {
+    margin-top: 15%;
+    font-size: 0.6rem;
+}
+.popup .inner .skill .skillbox .container .item .text-caps2 {
+    margin-top: 1.5%;
+    font-size: 0.63rem;
+}
+.popup .inner .development {
+    width: 100%;
+    height: 50%;
+}
+.popup .inner .development .debox {
+    height: 90%;
+    margin-top: 10px;
+}
+.popup .inner .development .debox .txt {
+    padding: 7px;
+    font-size: 0.7rem;
+}
+.popup .inner .development .debox ul {
+    font-size: 1.3rem;
+}
+.popup .inner .development .debox ul li {
+    line-height: 25px;
+    padding-left: 10px;
 }
 
+.popup button {
+    font-size: 0.7rem;
 
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+/* --------------------------- */
+main .project {
+    height: 60vh;
+    padding-top: 0;
+}
+main .project .sp p {
+    font-size: 4rem;
+    height: 35%;
+}
+main .project .sp .s {
+    padding: 150px 2% 0;
+}
+main .project .sp .p {
+    padding-left: 17%;
+}
+/* ----------------------------- */
+main .creative {
+    height: 1050px;
+    padding-top: 0;
+}
+/* ---------------------------- */
+main .creative {
+    height: 1100px;
+    padding-top: 0;
+}
+main .creative .work1 {
+    width: 95%;
+    height: 60vh;
+    margin: 20px auto;
+}
+main .creative .work1 h1 {
+    font-size: 1.9rem;
+}
+main .creative .work1 > section {
+    width: 96%;
+    margin: 20px auto;
+}
+main .creative .work1 > section .design .inner-ct1 h2 {
+    font-size: 1.5rem;
+    padding-top: 30px;
+}
+main .creative .work1 > section .design .inner-ct1 button {
+    width: 70px;
+    height: 30px;
 
+    position: absolute;
+    bottom: 10px; left: 23%;
+}
+main .creative .work1 > section .design .inner-ct1 button a {
+    font-size: 0.7rem;
+    line-height: 30px;
+}
+main .creative .work1 > section .design .inner-ct1 button a:active {
+    font-size: 0.6rem;
+}
+main .creative .work1 > section .design .inner-ct1 .d-img1 {
+    line-height: 120px;
+    font-size: 1.5rem;
+}
+/* -----------grid--------------- */
+main .creative .work1 > section .design .inner-ct2 .grid {
+    height: 40%;
+}
+main .creative .work1 > section .design .inner-ct2 .grid .item1 {
+    height: 130px;
+}
+main .creative .work1 > section .design .inner-ct2 .grid .item3 {
+    padding-top: 15px;
+}
+main .creative .work1 > section .design .inner-ct2 .grid .item3 .btn {
+    height: 60%;
+    margin-top: 20px;
+}
+main .creative .work1 > section .design .inner-ct2 .grid .item3 .btn a {
+    font-size: 1rem;
+    padding-top: 5px;
+}
+main .creative .work1 > section .design .inner-ct2 .grid .item3 .btn a:active {
+    font-size: 0.9rem;
+}
+/* work2 */
+main .creative .work2 > section .motion .inner-mo1 {
+    height: 80px;
+}
+main .creative .work2 > section .motion .inner-mo1 h2 {
+    font-size: 1.7rem;
+}
+main .creative .work2 > section .motion .inner-mo1 button {
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    bottom: 15px; right: 8px;
+}
+main .creative .work2 > section .motion .inner-mo1 button a {
+    font-size: 0.7rem;
+    line-height: 30px;
+}
+main .creative .work2 > section .motion .inner-mo1 button a:active {
+    font-size: 0.6rem;
+}
+/* --------------------------- */
+main .creative .work2 > section .motion .inner-mo2 article {
+    height: 35vh;
+}
+main .creative .work2 > section .motion .inner-mo2 article > .container .no1 {
+    padding-top: 20px;
+}
+main .creative .work2 > section .motion .inner-mo2 article > .container .no1 h2 {
+    font-size: 0.9rem;
+}
+main .creative .work2 > section .motion .inner-mo2 article > .container .no1 p {
+    font-size: 0.6rem;
+    margin-top: 10px;
+}
+main .creative .work2 > section .motion .inner-mo2 article > .container .no2 {
+    line-height: 150px;
+}
+main .creative .work2 > section .motion .inner-mo2 article > .container .no2 video{
+    padding-top: 16px;
+}
+/* ------------------------------- */
+main .creative .work2 > section .motion .inner-mo2 .cmore {
+    height: 40px;
+    margin: 20px auto;
+}
+main .creative .work2 > section .motion .inner-mo2 .cmore a {
+    font-size: 1.15rem;
+    line-height: 36px;
+}
+main .creative .work2 > section .motion .inner-mo2 .cmore a:active {
+    font-size: 1rem;
+}
+/* ----------------------- */
+footer {
+    height: 635px;
+}
+footer .f-inner .contact {
+    margin-right: 20px;
+}
+footer .f-inner .contact .box form .input::placeholder {
+    font-size: 0.65rem;
 
-
-
-
-
-
-
-
+}
+footer .f-inner .contact .box form #useremail {
+    width: 200px;
+    height: 40px;
+    font-size: 30px;
+    padding-left: 15px;
+}
+footer .f-inner .contact .box form .sub {
+    width: 55px;
+    height: 40px;
+    font-size: 0.5rem;
+}
+footer .f-inner .contact .box form .sub:active {
+    font-size: 0.4rem;
+}
+/* ---------------- */
+.gotop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
 
     /* --------- */
 }

@@ -28,6 +28,10 @@ a {
     color: #0B381B;
 }
 
+body >.wrap {
+    width: 100%;
+    background: linear-gradient(#0B381B, #272221, #0B381B);
+}
 
 
 /* header */
@@ -79,8 +83,7 @@ header .logo a {
 @font-face {
     font-family: 'CWDangamAsac-Bold';
     src: url('../font/logo/Sugar\ Peachy\ DEMO.otf');
-    /* src: url('../font/logo/Aromatron-Regular.ttf'); */
-    /* src: url('../font/logo/GROOT___.TTF'); */
+   
     font-weight: normal;
     font-style: normal;
 }
@@ -93,12 +96,12 @@ header .h-inner {
     width: 100%;
     transition: width .6s, right .6s, font-size 0.2s;
     z-index: 99;
+    font-size: 1rem;
 }
 header .h-inner.hi {
     width: 6.5%;
     font-size: 0;
     right: 2.1%;
-    
     position: fixed;
     top: -2px;
     right: 2.1%;
@@ -837,6 +840,7 @@ main .creative .work2 > section .motion .inner-mo1 button {
     width: 200px;
     height: 50px;
     border: none;
+    background-color: transparent;
 
     position: absolute;
     bottom: 20px; right: 40px;
@@ -849,7 +853,7 @@ main .creative .work2 > section .motion .inner-mo1 button a {
     font-size: 1.2rem;
     font-weight: bold;
 
-    background-color: #272221;
+    /* background-color: #272221; */
     color: #ECD1C2;
 }
 main .creative .work2 > section .motion .inner-mo1 button a:active {
